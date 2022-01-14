@@ -36,6 +36,17 @@ let dimi = [
     "\nExod 34,35,36\n Pag. 98",
     "\nExod 37,38\n Pag. 102",
     "\nExod 39,40\n Pag. 104",
+    "\nLeviticul 1,2,3\n Pag. ",
+    "\nLeviticul 4,5,6\n Pag. ",
+    "\nLeviticul \n Pag. ",
+    "\nLeviticul \n Pag. ",
+    "\nLeviticul \n Pag. ",
+    "\nLeviticul \n Pag. ",
+    "\nLeviticul \n Pag. ",
+    "\nLeviticul \n Pag. ",
+    "\nLeviticul \n Pag. ",
+    "\nLeviticul \n Pag. ",
+    "\nLeviticul \n Pag. ",
     "\n\n Pag. ",
 
 
