@@ -37,7 +37,6 @@ let dimi = [
     "\nExod 37,38\n Pag. 102",
     "\nExod 39,40\n Pag. 104",
     "\n\n Pag. ",
-    "asdasd"
 
 
 ];
