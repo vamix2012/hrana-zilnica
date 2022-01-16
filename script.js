@@ -173,7 +173,7 @@ let dimi = [
     "\nNeemia 12,13\n Pag. 510",
     "\nEstera 1,2,3\n Pag. 513",
     "\nEstera 4,5,6\n Pag. 516",
-    "\nEstera 7\n Pag. 518",
+    "\nEstera 7,8,9,10\n Pag. 518",
     "\nIov 1,2,3\n Pag. 521",
     "\nIov 4,5,6\n Pag. 523",
     "\nIov 7,8,9\n Pag. 526",
