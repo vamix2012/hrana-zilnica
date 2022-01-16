@@ -8,15 +8,54 @@
     <title>Hrana Zilnica Lista</title>
     <link rel="stylesheet" href="style.css">
 
-    <script>
+    <script src="./script.js">
 
+    </script>
+
+    <script>
+function setList(){
+ let firstDay = 1640991600000;
+let oneDayInMs = 86400000;
+
+firstDay -=oneDayInMs;
+
+    
+    for (let i=0; i< 365; i++){
+        firstDay += oneDayInMs;
+        let dat = new Date(firstDay);
+
+let dd = dat.getDate() < 10 ? "0"+ dat.getDate() : dat.getDate();
+let mont = dat.getMonth()+1;
+let mm = mont < 10 ? "0"+ mont : mont ;
+let dateline = dd +"."+mm;
+        
+    let list = document.getElementById("customers");
+    list.innerHTML += `
+    <tr>
+    <td>${dateline}</td>
+    <td>${dimi[i]}</td>
+    <td>${seara[i]}</td>
+    </tr>
+    
+    `
+    }
+}
 
 
     </script>
+
 </head>
 
 <body onload="setList()">
 
+    <table id="customers">
+        <tr>
+        <th>Data</th>
+        <th>Dimineata</th>
+        <th>Seara</th>
+    </tr>
+    
+    </table>
 
 
 </body>
