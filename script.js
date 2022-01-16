@@ -364,53 +364,7 @@ let dimi = [
     "\nZaharia 7,8,9\n Pag. 912",
     "\nZaharia 10,11,12\n Pag. 914",
     "\nZaharia 13,14\n Pag. 916",
-    "\nMaleahi 1-4\n Pag. 917",
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-
-    "\n\n Pag. ",
-
-
+    "\nMaleahi 1-4\n Pag. 917"
 ];
 
 let seara = [
@@ -778,61 +732,7 @@ let seara = [
     "\nApocalipsa 19\n Pag. 1220",
     "\nApocalipsa 20\n Pag. 1221",
     "\nApocalipsa 21\n Pag. 1221",
-    "\nApocalipsa 22\n Pag. 1222",
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-
+    "\nApocalipsa 22\n Pag. 1222"
 ];
 
 
