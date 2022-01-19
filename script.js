@@ -805,8 +805,5 @@ function shareGand() {
 }
 
 function calc() {
-    let total = dimi.length + seara.length;
-    let progress = (total * 100) / 730;
-    console.log("dimi ", dimi.length + " din 365 ", "\n sera ", seara.length + " din 365");
-    document.getElementById("progress").innerHTML = "Baza de date 'Pasajul zilei' este " + progress.toFixed(2) + "% completa, doresti sa te implici la completarea bazei de date?     <a href='./implicare.html'>Click aici</a><br> "
+    document.getElementById("progress").innerHTML = "<button class='button-37' role='button'><a href='./plan.html'>Planul Complet de Citire</a></button> "
 }
