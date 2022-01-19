@@ -17,6 +17,7 @@ body {
 
 table {
     margin-bottom: 32px;
+    border-radius: 30px !important;
 }
 
 #customers {
@@ -29,7 +30,15 @@ table {
 #customers th {
     border: 1px solid #ddd;
     padding: 8px;
+
 }
+
+#customers th {
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+
+
 
 #customers tr:nth-child(even) {
     background-color: #f2f2f2;
