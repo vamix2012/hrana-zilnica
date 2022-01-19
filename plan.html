@@ -20,6 +20,8 @@
 
     <script>
         function setList() {
+            // Just if on mobile the localstorage must be deleted
+            // if (localStorage.getItem("plan")) localStorage.clear();
 
             if (!localStorage.getItem("plan")) {
                 let firstDay = 1640991600000;

@@ -359,11 +359,10 @@ let dimi = [
     "\nHabacuc 1,2,3\n Pag. 901",
     "\nTefania 1,2,3\n Pag. 904",
     "\nHagai 1,2\n Pag. 906",
-    "\nZaharia 1,2,3\n Pag. 908",
-    "\nZaharia 4,5,6\n Pag. 910",
-    "\nZaharia 7,8,9\n Pag. 912",
-    "\nZaharia 10,11,12\n Pag. 914",
-    "\nZaharia 13,14\n Pag. 916",
+    "\nZaharia 1,2,3,4\n Pag. 908",
+    "\nZaharia 5,6,7,8\n Pag. 910",
+    "\nZaharia 9,10,11\n Pag. 912",
+    "\nZaharia 12,13,14\n Pag. 914",
     "\nMaleahi 1-4\n Pag. 917"
 ];
 
@@ -685,8 +684,7 @@ let seara = [
     "\nEvrei 7\n Pag. 1178",
     "\nEvrei 8\n Pag. 1180",
     "\nEvrei 9\n Pag. 1180",
-    "\nEvrei 10:1-23\n Pag. 1181",
-    "\nEvrei 10:24-39\n Pag. 1182",
+    "\nEvrei 10\n Pag. 1181",
     "\nEvrei 11:1-19\n Pag. 1183",
     "\nEvrei 11:20-40\n Pag. 1184",
     "\nEvrei 12\n Pag. 1184",
