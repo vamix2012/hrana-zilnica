@@ -765,7 +765,7 @@ function init() {
 
 
     setMsg();
-    calc();
+
 
 }
 
@@ -800,8 +800,4 @@ function shareGand() {
             text: `${gand}`
         })
     }
-}
-
-function calc() {
-    document.getElementById("progress").innerHTML = "<button class='button-37' role='button'><a href='./plan.html'>Planul Complet de Citire</a></button> "
 }
