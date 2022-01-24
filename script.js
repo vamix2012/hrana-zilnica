@@ -757,16 +757,9 @@ let msg = "";
 
 function init() {
     document.getElementById("data").innerHTML = d + "." + m + "." + y;
-
     document.getElementById("Dimineata").innerHTML = dimi[day - 1];
-
     document.getElementById("Seara").innerHTML = seara[day - 1];
-
-
-
     setMsg();
-
-
 }
 
 function setMsg() {
