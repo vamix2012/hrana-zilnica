@@ -1,49 +1,78 @@
-let canvas1;
+let canvas;
 let ctx1;
 let color = "black";
 let size = 32;
+let randomNum = getRandomInt(1, 8);
 
 function initCanvas() {
-    canvas1 = document.getElementById("canvas1");
-    ctx1 = canvas1.getContext("2d");
+    canvas = document.getElementById("canvas");
+    ctx1 = canvas.getContext("2d");
 
-    canvas1.width = 350;
-    canvas1.height = 250;
+    canvas.width = 350;
+    canvas.height = 250;
 
     let img = new Image();
     img.onload = function () {
-        ctx1.drawImage(img, 0, 0, canvas1.width, canvas1.height);
+        ctx1.drawImage(img, 0, 0, canvas.width, canvas.height);
         ctx1.globalAlpha = 1;
         ctx1.fillStyle = color;
         ctx1.font = `${size}px Comic Sans MS`;
+
         ctx1.textAlign = "center";
-        ctx1.fillText("Pasajul Zilei", canvas1.width / 2, size);
+        ctx1.fillText("Pasajul Zilei", canvas.width / 2, size * 1.2);
         ctx1.font = `${size - 10}px Comic Sans MS`;
-        ctx1.fillText(d + "." + m + "." + y, canvas1.width / 2, size * 2);
-        ctx1.fillText("Dimineata", canvas1.width / 2, size * 4);
-        ctx1.fillText(dimi[day - 1], canvas1.width / 2, size * 5);
-        ctx1.fillText("Seara", canvas1.width / 2, size * 6);
-        ctx1.fillText(seara[day - 1], canvas1.width / 2, size * 7);
+        ctx1.fillText(d + "." + m + "." + y, canvas.width / 2, size * 2.3);
+        ctx1.fillText("Dimineata", canvas.width / 2, size * 3.8);
+        ctx1.fillText(dimi[day - 1], canvas.width / 2, size * 4.8);
+        ctx1.fillText("Seara", canvas.width / 2, size * 5.8);
+        ctx1.fillText(seara[day - 1], canvas.width / 2, size * 6.8);
         ctx1.textAlign = "end";
         ctx1.font = `${size - 20}px Comic Sans MS`;
-        ctx1.fillText("hrana-zilnica.info", canvas1.width - 10, size * 7.6);
+        ctx1.fillText("hrana-zilnica.info", canvas.width - 4, size * 7.7);
 
     };
-    img.src = '2.jpeg';
-
-
-
+    img.src = `./assets/${randomNum}.jpeg`;
 }
 
 
-function download() {
-    const image = canvas1.toDataURL();
-    const link = document.createElement("a");
-    link.href = image;
-    link.download = `day${day - 1}.png`;
-    link.click();
-
+function getRandomInt(min, max) {
+    min = Math.ceil(min);
+    max = Math.floor(max);
+    return Math.floor(Math.random() * (max - min + 1)) + min;
 }
+
+
+
+
+
+async function share() {
+    const canvas = document.getElementById('canvas');
+    const dataUrl = canvas.toDataURL();
+    const blob = await (await fetch(dataUrl)).blob();
+    const filesArray = [
+        new File(
+            [blob],
+            `ziua-${day - 1}.png`,
+            {
+                type: blob.type,
+                lastModified: new Date().getTime()
+            }
+        )
+    ];
+    const shareData = {
+        files: filesArray,
+    };
+    navigator.share(shareData);
+}
+
+
+    // const image = canvas.toDataURL();
+    // const link = document.createElement("a");
+    // link.href = image;
+    // link.download = `ziua-${day - 1}.png`;
+    // link.click();
+
+
 
 
 
