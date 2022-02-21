@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Hrana Zilnica</title>
     <script src="./engine.js"></script>
     <script src="./db.js"></script>
     <script src="./canvas.js"></script>
@@ -20,36 +20,15 @@
 
 </head>
 
-<body onload="init() ,initCanvas()">
+<body onload="initCanvas()">
     <div class="content-wrap">
         <h2 class="mt-4 mb-4">Hrana Zilnica</h2>
-        <table id="customers">
-            <tr class="tableHeader">
-                <th colspan="2" style="text-align: center;">Pasajul Zilei</th>
 
-            </tr>
-            <tr>
-                <th>Data</th>
-                <td id="data"></td>
 
-            </tr>
-            <tr>
-                <th>Dimineata</th>
-                <td id="Dimineata"></td>
-            </tr>
-            <tr>
-                <th>Seara</th>
-                <td id="Seara"></td>
-            </tr>
+        <canvas id="canvas1"></canvas>
+        <button class="button-37" role="button" onclick="download()"><a href="#">Descarca Pasaj</a></button>
 
-        </table>
-        <button class="button-37" onclick="share()" role="button"><a href="#">Trimite Pasaj</a></button>
-        <br>
-        <h2>Pasajul ca Imagine</h2>
-        <canvas id="canvas"></canvas>
-        <button class="button-37" onclick="download()"><a href="#">Trimite Imagine Pasaj</a></button>
 
-        <h2 class="mt-4"></h2>
         <table id="customers">
             <tr>
                 <th class="verse">
