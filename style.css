@@ -1,4 +1,5 @@
 .content-wrap {
+    background-image : url("");
     display: flex;
     justify-content: center;
     flex-direction: column;

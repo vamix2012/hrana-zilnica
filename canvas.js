@@ -32,6 +32,7 @@ function initCanvas() {
 
     };
     img.src = `./assets/${randomNum}.jpeg`;
+    setMsg();
 }
 
 
@@ -45,25 +46,25 @@ function getRandomInt(min, max) {
 
 
 
-async function share() {
-    const canvas = document.getElementById('canvas');
-    const dataUrl = canvas.toDataURL();
-    const blob = await (await fetch(dataUrl)).blob();
-    const filesArray = [
-        new File(
-            [blob],
-            `ziua-${day - 1}.png`,
-            {
-                type: blob.type,
-                lastModified: new Date().getTime()
-            }
-        )
-    ];
-    const shareData = {
-        files: filesArray,
-    };
-    navigator.share(shareData);
-}
+// async function share() {
+//     const canvas = document.getElementById('canvas');
+//     const dataUrl = canvas.toDataURL();
+//     const blob = await (await fetch(dataUrl)).blob();
+//     const filesArray = [
+//         new File(
+//             [blob],
+//             `ziua-${day - 1}.png`,
+//             {
+//                 type: blob.type,
+//                 lastModified: new Date().getTime()
+//             }
+//         )
+//     ];
+//     const shareData = {
+//         files: filesArray,
+//     };
+//     navigator.share(shareData);
+// }
 
 
     // const image = canvas.toDataURL();

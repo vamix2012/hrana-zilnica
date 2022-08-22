@@ -23,18 +23,18 @@ let y = date.getFullYear();
 //     setMsg();
 // }
 
-// function setMsg() {
-//     msg = "_*Pasajul Zilei*_\n\n*Data:*  ```" + d + "." + m + "." + y + "```\n\n*Dimineata:*  ```" + dimi[day - 1] + "```\n\n*Seara:* ```" + seara[day - 1] + "```" + "\n\n_Sursa: hrana-zilnica.info_";
-// }
+function setMsg() {
+    msg = "_*Pasajul Zilei*_\n\n*Data:*  ```" + d + "." + m + "." + y + "```\n\n*Vechiul Testament:*  ```\n" + dimi[day - 1] + "```\n\n*Noul Testament:* ```\n" + seara[day - 1] + "```" + "\n\n_Sursa: hrana-zilnica.info_";
+}
 
-// function share() {
-//     if (navigator.share) {
-//         navigator.share({
-//             title: `Mesaj`,
-//             text: `${msg}`
-//         })
-//     }
-// }
+function share() {
+    if (navigator.share) {
+        navigator.share({
+            title: `Mesaj`,
+            text: `${msg}`
+        })
+    }
+}
 
 function shareVerse() {
     verse = "```" + document.getElementById("verse").innerText + "```\n\n_Sursa: hrana-zilnica.info_"
